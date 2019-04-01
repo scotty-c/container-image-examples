@@ -8,7 +8,7 @@ Dockerfiles=("Dockerfile.alpine"
 
 for i in "${Dockerfiles[@]}"
 do	
-	tag="${i#*.}-golang"
+	tag="${i#*.}-python"
     docker build -t $tag -f $i .
 done
 
