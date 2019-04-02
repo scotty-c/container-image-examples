@@ -2,7 +2,6 @@
 
 Dockerfiles=("Dockerfile.alpine"
              "Dockerfile.full-os" 
-             "Dockerfile.scratch"
              "Dockerfile.slim-os")
 
 

@@ -1,0 +1,15 @@
+FROM python:3.8.0a2-alpine3.9 as build
+
+RUN python3 -m venv /web
+
+COPY . /web
+
+FROM python:3.8.0a2-alpine3.9
+
+COPY --from=build /web /web
+
+WORKDIR /web
+
+EXPOSE 8080
+
+ENTRYPOINT [ "python", "web.py" ]

@@ -1,0 +1,15 @@
+FROM python:3.8.0a2-stretch as build
+
+RUN python3 -m venv /web
+
+COPY . /web
+
+FROM python:3.8.0a2-stretch
+
+COPY --from=build /web /web
+
+WORKDIR /web
+
+EXPOSE 8080
+
+ENTRYPOINT [ "python", "web.py" ]
