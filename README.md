@@ -26,6 +26,6 @@ scratch-golang
 slim-os-golang
 
 ### Python
-alpine-python
-full-os-python
-slim-os-python
+alpine-python  
+full-os-python  
+slim-os-python  
