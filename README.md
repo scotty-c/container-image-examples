@@ -12,7 +12,7 @@ To build the images please run the `build-images.sh` script from each of the lan
 
 ## To run the a container from the images
 To run one of the images after building them with the `build-images.sh` script use the following command. 
- 
+
 `docker run -d -p 80:3000 scratch-golang`  
 
 The application will now be running on `127.0.0.1` check it in your browser
@@ -23,4 +23,9 @@ If you want to use a different image for example a python image replace `scratch
 alpine-golang     
 full-os-golang  
 scratch-golang  
-slim-os-golang  
+slim-os-golang
+
+### Python
+alpine-python
+full-os-python
+slim-os-python
